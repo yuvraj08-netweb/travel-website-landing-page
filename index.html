@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel | Landing Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="fullPage">
+        <div class="decoreImage">
+            <img src="./assets/img/Decore.png" alt="decor" class="w-full min-h-[50vh] absolute -z-20 -top-5">
+        </div>
+
+        <!-- NAVBAR 
+         ========================= -->
+        <div class="navContainer container m-auto pt-12">
+            <nav class="flex justify-between w-[90%] m-auto">
+                <div class="navLeft">
+                    <div class="brandLogo">
+                        <img src="./assets/img/Logo.png" alt="brand-logo" class="z-0">
+                    </div>
+                </div>
+                <div class="navRight z-10 w-[70%]">
+                    <ul class="flex justify-between font-medium leading-10">
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Flights</a></li>
+                        <li><a href="#">Bookings</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#" id="signUpBtn" class="border border-gray-900 rounded px-4 pt-1 pb-2">Sign up</a>
+                        </li>
+                        <li>
+                            <div>
+                                <div
+                                    class="inline-flex w-full justify-center gap-x-1 text-sm font-semibold text-gray-900">
+                                    EN
+                                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hero Section
+         ========================= -->
+        <div class="heroSection container m-auto " id="heroSection">
+            <div class="innerContainer w-[90%] m-auto flex">
+                <div class="leftTextContent max-w-[630px] lg:w-[50%] mt-[130px]">
+                    <div class="tagline">
+                        <p class="text-xl  font-bold text-[#DF6951] uppercase">Best Destinations around the world</p>
+                    </div>
+                    <div class="heading mt-6">
+                        <h1 class="relative lg:text-[84px] text-[42px] z-10 font-bold leading-[89px] text-[#14183E]">Travel,<span>
+                                enjoy <img src="./assets/img/lineDecore.png" alt=""
+                                    class="absolute -right-[20px] -z-10 -mt-5">
+                            </span>
+                            and live a new
+                            and full life</h1>
+                    </div>
+                    <div class="descPara max-w-[477px] leading-8 mt-8">
+                        <p>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
+                            engrossed
+                            listening. Park gate sell they west hard for the.</p>
+                    </div>
+                    <div class="ctaBtn flex mt-[34px]">
+                        <div class="findOutMore">
+                            <button type="button"
+                                class=" bg-[#F1A501] drop-shadow-xl px-5 py-3 rounded-md text-lg text-white">Find out
+                                more</button>
+                        </div>
+                        <div class="playDemo ">
+                            <button class="flex -mt-2 ml-3">
+                                <img src="./assets/img/Play button.png" alt="playButton" class="w-[50%]">
+                                <p class="text-lg mt-6 -ml-2">Play Demo</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightImageContent lg:relative lg:block hidden">
+                    <img src="./assets/img/Traveller 1.png" alt="Traveller" class="relative top-5 right-14 w-full">
+                    <img src="./assets/img/plane.png" alt="plane" class="absolute top-[60px] left-12">
+                    <img src="./assets/img/plane.png" alt="plane" class="absolute top-[110px] right-7 -z-10">
+                </div>
+            </div>
+        </div>
+
+        <!-- Services/Category Section 
+         ================================= -->
+        <div class="services mt-32 container m-auto text-center">
+            <div class="servicesHeader w-[95%] m-auto relative">
+                <div class="decoreImage">
+                    <img src="./assets/img/starsPattern.png" alt="" class="absolute sm:right-0 sm:block hidden">
+                </div>
+                <h6 class="uppercase text-lg font-semibold text-[#5E6282]">Category</h6>
+                <h2 class="text-[50px] font-bold text-[#14183E]">We Offer Best Services</h2>
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-28">
+                    <div class=" p-4">
+                        <div class="card flex flex-col justify-center items-center">
+                            <div class="imageContainer">
+                                <img src="./assets/img/dish.png" alt="">
+                            </div>
+                            <div class="cardHeading mt-8">
+                                <h5 class="text-xl font-semibold">Calculated Weather</h5>
+                            </div>
+                            <div class="cardInfo mt-4 w-[190px]">
+                                <p class="text-base">Built Wicket longer admire do barton vanity itself do in it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative p-4 -mt-6 md:w-full w-[250px] m-auto">
+                        <div
+                            class="card pb-7 flex flex-col justify-center items-center bg-white rounded-3xl drop-shadow-md">
+                            <div class="imageContainer">
+                                <img src="./assets/img/planeWithBg.png" alt="" class="w-[120px]">
+                            </div>
+                            <div class="cardHeading ">
+                                <h5 class="text-xl font-semibold">Best Flights</h5>
+                            </div>
+                            <div class="cardInfo mt-4 ">
+                                <p class="text-base w-[60%] m-auto">Engrossed listening. Park gate sell they west hard
+                                    for the.</p>
+                            </div>
+                        </div>
+                        <img src="./assets/img/Rectangle 157.png" alt="" class="-z-10 absolute -bottom-5 -left-5">
+                    </div>
+                    <div class="p-4 md:mt-0 mt-10">
+                        <div class="card flex flex-col justify-center items-center">
+                            <div class="imageContainer">
+                                <img src="./assets/img/mic.png" alt="">
+                            </div>
+                            <div class="cardHeading mt-8">
+                                <h5 class="text-xl font-semibold">Local Events</h5>
+                            </div>
+                            <div class="cardInfo mt-4 w-[190px]">
+                                <p class="text-base">Barton vanity itself do in it. Preferd to men it engrossed
+                                    listening. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="card flex flex-col justify-center items-center">
+                            <div class="imageContainer">
+                                <img src="./assets/img/gear.png" alt="">
+                            </div>
+                            <div class="cardHeading mt-11">
+                                <h5 class="text-xl font-semibold">Customization</h5>
+                            </div>
+                            <div class="cardInfo mt-4 w-[190px]">
+                                <p class="text-base">We deliver outsourced
+                                    aviation services for
+                                    military customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Destinations
+         ================================= -->
+        <div class="topDestinations container m-auto text-center mt-32">
+            <div class="innerContainer w-[90%] m-auto">
+                <div class="destiHeader">
+                    <h6 class=" text-lg font-semibold text-[#5E6282]">Top Selling</h6>
+                    <h2 class="text-[50px] font-bold text-[#14183E]">Top Destinations</h2>
+                </div>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-28 mt-16 ">
+                    <div class="destiCard rounded-3xl w-[300px] m-auto bg-white drop-shadow-xl">
+                        <div class="imageContainer">
+                            <img src="./assets/img/destination-1.png" alt="" class="w-full rounded-t-3xl h-[330px]">
+                        </div>
+                        <div class="subHeading flex justify-between p-5">
+                            <p>Rome, Italty</p>
+                            <p>$5.42k</p>
+                        </div>
+                        <div class="destiInfo flex flex-row p-5 pt-0">
+                            <img src="./assets/img/Vector.png" alt="Vector">
+                            <p>10 Days Trip</p>
+                        </div>
+                    </div>
+                    <div class="destiCard rounded-3xl w-[300px] m-auto bg-white drop-shadow-xl">
+                        <div class="imageContainer">
+                            <img src="./assets/img/destination-2.png" alt="" class="w-full rounded-t-3xl h-[330px]">
+                        </div>
+                        <div class="subHeading flex justify-between p-5">
+                            <p>London, UK</p>
+                            <p>$4.2k</p>
+                        </div>
+                        <div class="destiInfo flex flex-row p-5 pt-0">
+                            <img src="./assets/img/Vector.png" alt="Vector">
+                            <p>12 Days Trip</p>
+                        </div>
+                    </div>
+                    <div class="specialCard relative w-[300px] m-auto">
+                        <div class="destiCard rounded-3xl  bg-white drop-shadow-xl ">
+                            <div class="imageContainer ">
+                                <img src="./assets/img/destination-3.png" alt="" class="w-full rounded-t-3xl h-[330px]">
+                            </div>
+                            <div class="subHeading flex justify-between p-5">
+                                <p>Full Europe</p>
+                                <p>$15k</p>
+                            </div>
+                            <div class="destiInfo flex flex-row p-5 pt-0">
+                                <img src="./assets/img/Vector.png" alt="Vector">
+                                <p>28 Days Trip</p>
+                            </div>
+
+                        </div>
+                        <img src="./assets/img/spiralDecore.png" alt="" class="absolute -right-16 bottom-7 -z-20">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Easy and Fast
+         ================================= -->
+        <div class="easyAndFast container m-auto mt-32 lg:text-left text-center">
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-4 m-16 lg:w-[85%] w-[90%] m-auto">
+                <div class="leftContainer ">
+                    <div class="destiHeader lg:max-w-[511px]">
+                        <h6 class="text-lg font-semibold text-[#5E6282]">Easy and Fast</h6>
+                        <h2 class="text-[50px] font-bold text-[#14183E] heading capitalize">Book your next trip
+                            in 3 easy steps</h2>
+                    </div>
+                    <div class="contentContainer max-w-max lg:m-0 m-auto text-left">
+                        <div class="content flex mt-8">
+                            <div class="imgContainer">
+                                <img src="./assets/img/Group 7.png" alt="">
+                            </div>
+                            <div class="contentHeading ml-7 max-w-[327px]">
+                                <h6 class="text-base font-bold text-[#5E6282]">Choose Destination</h6>
+                                <div class="contentInfo font-normal">
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Urna, tortor tempus. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content flex mt-8">
+                            <div class="imgContainer">
+                                <img src="./assets/img/Group 12.png" alt="">
+                            </div>
+                            <div class="contentHeading ml-7 max-w-[327px]">
+                                <h6 class="text-base font-bold text-[#5E6282]">Make Payment</h6>
+                                <div class="contentInfo">
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Urna, tortor tempus. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content flex mt-8">
+                            <div class="imgContainer">
+                                <img src="./assets/img/Group 11.png" alt="">
+                            </div>
+                            <div class="contentHeading ml-7 max-w-[327px]">
+                                <h6 class="text-base font-bold text-[#5E6282]">Reach Airport on Selected Date</h6>
+                                <div class="contentInfo">
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Urna, tortor tempus. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightContainer text-left m-auto relative top-5 mt-14 lg:w-full max-w-max">
+                    <!-- <div class="shadowImg absolute md:-right-52 md:-top-44 sm:-top-36 sm:-right-44 -top-28 -right-12">
+                        <img src="./assets/img/Group 589.png" alt="blue-Shadow" class="">
+                    </div> -->
+                    <div class="shadowImg absolute -top-44 -right-44">
+                        <img src="./assets/img/Group 589.png" alt="blue-Shadow" class="">
+                    </div>
+                    <div class="bigCard  relative bg-white p-6 max-w-max rounded-3xl drop-shadow-xl">
+                        <div class="imgContainer">
+                            <img src="./assets/img/Rectangle 17.jpg" alt="">
+                        </div>
+                        <div class="cardInnerContent">
+                            <div class="cardHeading mt-7">
+                                <h6 class="text-lg font-medium">Trip To Greece</h6>
+                            </div>
+                            <div class="cardSubHeading mt-3">
+                                <p class="text-base font-medium text-[#84829A]">14-29 June | by Robbin joseph</p>
+                            </div>
+                            <div class="icons flex mt-4">
+                                <img src="./assets/img/LEAF.png" alt="LEAF" class="">
+                                <img src="./assets/img/map icon.png" alt="map" class="ml-4">
+                                <img src="./assets/img/send.png" alt="send" class="ml-4">
+                            </div>
+                            <div class="cardFooter flex justify-between mt-7">
+                                <div class="footerLeft flex">
+                                    <img src="./assets/img/building 1.png" alt="building" class="h-[16px]">
+                                    <p class="ml-3 -mt-1 text-base font-medium text-[#84829A]"> 24 people going </p>
+                                </div>
+                                <div class="footerRight">
+                                    <img src="./assets/img/heart (6) 1.png" alt="heart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="smallCard  bg-white p-4 rounded-3xl drop-shadow-xl flex absolute bottom-12 md:-right-[129px] right-[175px] w-[263px] md:w-[80%] md:flex hidden">
+                        <div class="cardLeft ">
+                            <img src="./assets/img/image 32.png" alt="" class="rounded-full">
+                        </div>
+                        <div class="cardRight ml-4 w-full">
+                            <div class="status">
+                                <p class="text-base font-medium text-[#84829A]">Ongoing</p>
+                            </div>
+                            <div class="cardHeading">
+                                <h6 class="text-lg font-medium">Trip to rome</h6>
+                            </div>
+                            <div class="progressBar mt-2">
+                                <p><span class="text-[#8A79DF] font-medium">40%</span> completed</p>
+                                <div class="w-full bg-[#F5F5F5] rounded-full h-[5px] mt-2">
+                                    <div class="bg-[#8A79DF] h-[5px] rounded-full" style="width: 45%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Testimonials
+         ================================= -->
+        <div class="testimonials  mt-32 container m-auto ">
+            <div class="testInnerContainer  w-[85%] m-auto">
+                <div class="grid  lg:grid-cols-2 grid-cols-1 ">
+                    <div class="leftText">
+                        <div class="header">
+                            <h6 class="uppercase text-lg font-semibold text-[#5E6282]">Testimonials</h6>
+                            <h2 class="capitalize text-[50px] font-bold text-[#14183E] heading max-w-[410px]">
+                                What people say
+                                about Us.
+                            </h2>
+                        </div>
+                        <div class="dots  mt-11">
+                            <span class="dot inline-block min-h-[12px] min-w-[12px] bg-[#39425D] rounded-full"></span>
+                            <span class="dot  inline-block h-[12px] w-[12px] bg-[#E5E5E5] rounded-full ml-4"></span>
+                            <span class="dot inline-block h-[12px] w-[12px] bg-[#E5E5E5] rounded-full ml-4"></span>
+                        </div>
+                    </div>
+                    <div class="rightCards flex justify-between items-center lg:m-0 md:mt-28">
+                        <div class="cards relative">
+                            <div class="upperCard max-w-max p-8 bg-white drop-shadow-2xl rounded-md relative">
+                                <img src="./assets/img/testimonial1.png" alt="testimonial1" class="absolute -top-9 -left-9">
+                                <p class="font-semibold text-[#5E6282] text-base max-w-[350px]">“On the Windows talking
+                                    painted pasture yet its express parties use. Sure last upon he
+                                    same as knew next. Of believed or diverted no.”</p>
+                                <h6 class="font-bold text-[#5E6282] mt-8">Mike taylor</h6>
+                                <p class="font-semibold text-[#5E6282] mt-1 text-sm">Lahore, Pakistan</p>
+                            </div>
+    
+    
+                            <div class="lowerCard  max-w-max p-8 pb-3 bg-white border rounded-md absolute -bottom-16 -right-[50px] -z-10">
+                                <p class="font-semibold text-[#5E6282] text-base min-w-[350px] min-h-[72px]"></p>
+                                <h6 class="font-bold text-[#5E6282] mt-8">Chris Thomas</h6>
+                                <p class="font-semibold text-[#5E6282] mt-1 text-sm">CEO of Red Button</p>
+                            </div>
+                        </div>
+                        <div class="arrows h-[71px] flex flex-col justify-between">
+                            <img src="./assets/img/Vector 2.png" alt="">
+                            <img src="./assets/img/Vector 3.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Company Logos
+         ================================= -->
+        <div class="companyLogos container lg:w-[80%] m-auto mt-32">
+            <div class="innerContainer">
+                <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1" >
+                    <div class="company h-[200px] grayscale flex justify-center items-center">
+                        <img src="./assets/img/axon.png" alt="companyLogo">
+                    </div>
+                    <div class="company h-[200px] grayscale flex justify-center items-center">
+                        <img src="./assets/img/jetstar.png" alt="companyLogo">
+                    </div>
+                    <div class="company h-[200px] flex justify-center items-center ">
+                        <img src="./assets/img/expedia.png " alt="companyLogo" class="bg-white drop-shadow-md rounded-md px-8 py-4 h-115 overflow-hidden">
+                    </div>
+                    <div class="company h-[200px] grayscale flex justify-center items-center">
+                        <img src="./assets/img/qantas.png" alt="companyLogo">
+                    </div>
+                    <div class="company h-[200px] grayscale flex justify-center items-center">
+                        <img src="./assets/img/alitalia.png" alt="companyLogo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Letters
+         ================================= -->
+         <div class="subscriptionTaker container mt-32 lg:w-[90%] m-auto relative">
+            <div class="innerContainer bg-[#DFD7F9] w-[90%] m-auto relative rounded-xl rounded-tl-[120px] min-h-[410px] flex flex-col justify-center items-center">
+                <div class="spiralOne absolute bottom-0 -left-20">
+                    <img src="./assets/img/Mask Group.png" alt="">
+                </div>
+                <div class="centerItems text-center z-10">
+                    <div class="subscribeHeading max-w-[880px]">
+                        <h3 class="text-4xl font-semibold text-[#5E6282]">Subscribe to get information, latest news and other
+                            interesting offers about Jadoo</h3>
+                    </div>
+                    <div class="subscribeForm flex justify-center mt-[74px] w-full">
+                        <div class="formInput ">
+                            <input type="email" name="email" id="email" class="p-4 rounded-xl mr-4" placeholder="Your email">
+                        </div>
+                        <div class="formSubmit">
+                            <button type="submit" class="rounded-xl text-white px-8 py-4 bg-[#FF7D68]">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shareLogo absolute -top-8 -right-8">
+                    <img src="./assets/img/arrow.png" alt="">
+                </div>
+                <div class="spiralTwo absolute top-0 right-0 opacity-10">
+                    <img src="./assets/img/circles.png" alt="">
+                </div>
+            </div>
+            <div class="decoreOuter absolute -right-9 -bottom-16">
+                <img src="./assets/img/Group 5.png" alt="">
+            </div>
+         </div>
+
+        <!-- Footer
+         ================================= -->
+        <div class="footerContainer container mt-32 lg:w-[80%] m-auto">
+            <footer >
+                <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2 sm:max-w-[100%] max-w-max m-auto sm:text-left text-center" >
+                    <div class="company ">
+                        <div class="brandName">
+                            <h2 class="text-[44px] font-semibold">Jadoo.</h2>
+                        </div>
+                        <div class="tagline">
+                            <p class="text-sm text-[#080809]">Book your trip in minute, get full
+                                Control for much longer.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="companyLinks max-w-[150px] m-auto sm:mt-0 mt-14 ">
+                        <div class="heading">
+                            <h6 class="font-extrabold text-xl text-[#080809]">Company</h6>
+                        </div>
+                        <div class="links font-medium mt-7 text-[#5E6282] text-lg">
+                            <ul>
+                                <li>About</li>
+                                <li class="mt-1">Careers</li>
+                                <li class="mt-1">Mobile</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contactLinks max-w-[150px]  m-auto md:mt-0 mt-14">
+                        <div class="heading">
+                            <h6 class="font-bold text-xl text-[#080809]">Contact</h6>
+                        </div>
+                        <div class="links font-medium mt-7 text-[#5E6282] text-lg">
+                            <ul>
+                                <li>Help/FAQ</li>
+                                <li class="mt-1">Press</li>
+                                <li class="mt-1">Affilates</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="moreLinks max-w-[150px]  m-auto lg:mt-0 mt-14">
+                        <div class="heading">
+                            <h6 class="font-extrabold text-xl text-[#080809]">More</h6>
+                        </div>
+                        <div class="links font-medium mt-7 text-[#5E6282] text-lg">
+                            <ul>
+                                <li>Airlinefees</li>
+                                <li class="mt-1">Airline</li>
+                                <li class="mt-1">Low fare tips</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logoLinks lg:mt-0 mt-14 max-w-[200px]  m-auto">
+                        <div class="socialLogos flex">
+                            <img src="./assets/img/Social.png" alt="">
+                            <img src="./assets/img/Social (1).png" alt="">
+                            <img src="./assets/img/Social (2).png" alt="">
+                        </div>
+                        <div class="line font-medium mt-2 text-[#5E6282] text-xl">
+                            <p>Discover our app</p>
+                        </div>
+                        <div class="downloadButtons flex mt-4">
+                            <div class="playStore mr-2">
+                                <img src="./assets/img/Google Play.png" alt="">
+                            </div>
+                            <div class="appleStore">
+                                <img src="./assets/img/Play Store.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-sm text-[#5E6282] font-medium mt-[84px] mb-[84px]">
+                    <p>All rights reserved@jadoo.co</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
