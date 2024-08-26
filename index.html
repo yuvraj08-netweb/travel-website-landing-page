@@ -12,32 +12,40 @@
 <body>
     <div class="fullPage">
         <div class="decoreImage">
-            <img src="./assets/img/Decore.png" alt="decor" class="w-full min-h-[50vh] absolute -z-20 -top-5">
+            <img src="./assets/img/Decore.png" alt="decor"
+                class="w-full md:min-h-[50vh] absolute -z-20 -top-5 md:max-h-[1028px] h-full">
         </div>
 
         <!-- NAVBAR 
          ========================= -->
         <div class="navContainer container m-auto pt-12">
-            <nav class="flex justify-between w-[90%] m-auto">
+            <nav class="flex justify-between w-[90%] m-auto relative">
                 <div class="navLeft">
                     <div class="brandLogo">
                         <img src="./assets/img/Logo.png" alt="brand-logo" class="z-0">
                     </div>
                 </div>
-                <div class="navRight z-10 w-[70%]">
-                    <ul class="flex justify-between font-medium leading-10">
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Hotels</a></li>
-                        <li><a href="#">Flights</a></li>
-                        <li><a href="#">Bookings</a></li>
-                        <li><a href="#">Login</a></li>
+                <div class="navRight z-10 md:w-[70%]">
+                    <button class="md:hidden navToggle z-10" id="navToggle">
+                        <svg class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <ul class="md:flex md:justify-between font-medium leading-10 hidden navLinks">
+                        <li class="normalLinks"><a href="#">Destinations</a></li>
+                        <li class="normalLinks"><a href="#">Hotels</a></li>
+                        <li class="normalLinks"><a href="#">Flights</a></li>
+                        <li class="normalLinks"><a href="#">Bookings</a></li>
+                        <li class="normalLinks"><a href="#">Login</a></li>
                         <li><a href="#" id="signUpBtn" class="border border-gray-900 rounded px-4 pt-1 pb-2">Sign up</a>
                         </li>
                         <li>
                             <div>
-                                <div
-                                    class="inline-flex w-full justify-center gap-x-1 text-sm font-semibold text-gray-900">
-                                    EN
+                                <div id="lang"
+                                    class="inline-flex md:w-full justify-center gap-x-1 text-sm font-semibold text-gray-900">
+                                   <span>EN </span> 
                                     <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">
                                         <path fill-rule="evenodd"
@@ -62,9 +70,10 @@
                         <p class="text-xl  font-bold text-[#DF6951] uppercase">Best Destinations around the world</p>
                     </div>
                     <div class="heading mt-6">
-                        <h1 class="relative lg:text-[84px] text-[42px] z-10 font-bold leading-[89px] text-[#14183E]">Travel,<span>
+                        <h1 class="relative xl:text-[84px] text-[42px]  font-bold xl:leading-[89px] text-[#14183E]">
+                            Travel,<span class="inline-block">
                                 enjoy <img src="./assets/img/lineDecore.png" alt=""
-                                    class="absolute -right-[20px] -z-10 -mt-5">
+                                    class="xl:max-w-full max-w-[220px] absolute xl:-right-[20px] lg:right-0 -z-10 -mt-5">
                             </span>
                             and live a new
                             and full life</h1>
@@ -100,12 +109,12 @@
          ================================= -->
         <div class="services mt-32 container m-auto text-center">
             <div class="servicesHeader w-[95%] m-auto relative">
-                <div class="decoreImage">
-                    <img src="./assets/img/starsPattern.png" alt="" class="absolute sm:right-0 sm:block hidden">
+                <div class="decoreImage ">
+                    <img src="./assets/img/starsPattern.png" alt="" class="absolute sm:right-0 lg:block hidden">
                 </div>
                 <h6 class="uppercase text-lg font-semibold text-[#5E6282]">Category</h6>
                 <h2 class="text-[50px] font-bold text-[#14183E]">We Offer Best Services</h2>
-                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-28">
+                <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-28">
                     <div class=" p-4">
                         <div class="card flex flex-col justify-center items-center">
                             <div class="imageContainer">
@@ -176,7 +185,7 @@
                     <h6 class=" text-lg font-semibold text-[#5E6282]">Top Selling</h6>
                     <h2 class="text-[50px] font-bold text-[#14183E]">Top Destinations</h2>
                 </div>
-                <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-28 mt-16 ">
+                <div class="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-28 mt-16 ">
                     <div class="destiCard rounded-3xl w-[300px] m-auto bg-white drop-shadow-xl">
                         <div class="imageContainer">
                             <img src="./assets/img/destination-1.png" alt="" class="w-full rounded-t-3xl h-[330px]">
@@ -218,7 +227,8 @@
                             </div>
 
                         </div>
-                        <img src="./assets/img/spiralDecore.png" alt="" class="absolute -right-16 bottom-7 -z-20">
+                        <img src="./assets/img/spiralDecore.png" alt=""
+                            class="absolute -right-16 bottom-7 -z-20 sm:block hidden">
                     </div>
 
                 </div>
@@ -227,15 +237,15 @@
 
         <!-- Easy and Fast
          ================================= -->
-        <div class="easyAndFast container m-auto mt-32 lg:text-left text-center">
-            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-4 m-16 lg:w-[85%] w-[90%] m-auto">
+        <div class="easyAndFast container m-auto mt-32 xl:text-left text-center">
+            <div class="grid xl:grid-cols-2 grid-cols-1 gap-4 m-16 xl:w-[85%] w-[90%] m-auto">
                 <div class="leftContainer ">
-                    <div class="destiHeader lg:max-w-[511px]">
+                    <div class="destiHeader xl:max-w-[511px]">
                         <h6 class="text-lg font-semibold text-[#5E6282]">Easy and Fast</h6>
                         <h2 class="text-[50px] font-bold text-[#14183E] heading capitalize">Book your next trip
                             in 3 easy steps</h2>
                     </div>
-                    <div class="contentContainer max-w-max lg:m-0 m-auto text-left">
+                    <div class="contentContainer max-w-max xl:m-0 m-auto text-left">
                         <div class="content flex mt-8">
                             <div class="imgContainer">
                                 <img src="./assets/img/Group 7.png" alt="">
@@ -274,11 +284,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="rightContainer text-left m-auto relative top-5 mt-14 lg:w-full max-w-max">
+                <div class="rightContainer text-left m-auto relative top-5 mt-14 xl:w-full max-w-max">
                     <!-- <div class="shadowImg absolute md:-right-52 md:-top-44 sm:-top-36 sm:-right-44 -top-28 -right-12">
                         <img src="./assets/img/Group 589.png" alt="blue-Shadow" class="">
                     </div> -->
-                    <div class="shadowImg absolute -top-44 -right-44">
+                    <div class="shadowImg absolute -top-44 -right-44 md:block hidden">
                         <img src="./assets/img/Group 589.png" alt="blue-Shadow" class="">
                     </div>
                     <div class="bigCard  relative bg-white p-6 max-w-max rounded-3xl drop-shadow-xl">
@@ -335,13 +345,14 @@
 
         <!-- Testimonials
          ================================= -->
-        <div class="testimonials  mt-32 container m-auto ">
+        <div class="testimonials  mt-52 container m-auto xl:text-left text-center">
             <div class="testInnerContainer  w-[85%] m-auto">
-                <div class="grid  lg:grid-cols-2 grid-cols-1 ">
+                <div class="grid  xl:grid-cols-2 grid-cols-1 ">
                     <div class="leftText">
                         <div class="header">
                             <h6 class="uppercase text-lg font-semibold text-[#5E6282]">Testimonials</h6>
-                            <h2 class="capitalize text-[50px] font-bold text-[#14183E] heading max-w-[410px]">
+                            <h2
+                                class="capitalize text-[50px] font-bold text-[#14183E] heading max-w-[410px] xl:m-0 m-auto">
                                 What people say
                                 about Us.
                             </h2>
@@ -352,25 +363,30 @@
                             <span class="dot inline-block h-[12px] w-[12px] bg-[#E5E5E5] rounded-full ml-4"></span>
                         </div>
                     </div>
-                    <div class="rightCards flex justify-between items-center lg:m-0 md:mt-28">
+                    <div
+                        class="rightCards flex xl:flex-row flex-col  xl:justify-between justify-center items-center xl:m-0 mt-28 sm:w-full w-[80%] m-auto">
                         <div class="cards relative">
                             <div class="upperCard max-w-max p-8 bg-white drop-shadow-2xl rounded-md relative">
-                                <img src="./assets/img/testimonial1.png" alt="testimonial1" class="absolute -top-9 -left-9">
+                                <img src="./assets/img/testimonial1.png" alt="testimonial1"
+                                    class="absolute -top-9 -left-9">
                                 <p class="font-semibold text-[#5E6282] text-base max-w-[350px]">“On the Windows talking
                                     painted pasture yet its express parties use. Sure last upon he
                                     same as knew next. Of believed or diverted no.”</p>
                                 <h6 class="font-bold text-[#5E6282] mt-8">Mike taylor</h6>
                                 <p class="font-semibold text-[#5E6282] mt-1 text-sm">Lahore, Pakistan</p>
                             </div>
-    
-    
-                            <div class="lowerCard  max-w-max p-8 pb-3 bg-white border rounded-md absolute -bottom-16 -right-[50px] -z-10">
-                                <p class="font-semibold text-[#5E6282] text-base min-w-[350px] min-h-[72px]"></p>
+
+
+                            <div
+                                class="lowerCard  max-w-max p-8 pb-3 bg-white border rounded-md absolute -bottom-16 sm:-right-[50px] -right-[26px] -z-10">
+                                <p
+                                    class="font-semibold text-[#5E6282] text-base sm:min-w-[350px] min-w-[200px] min-h-[72px]">
+                                </p>
                                 <h6 class="font-bold text-[#5E6282] mt-8">Chris Thomas</h6>
                                 <p class="font-semibold text-[#5E6282] mt-1 text-sm">CEO of Red Button</p>
                             </div>
                         </div>
-                        <div class="arrows h-[71px] flex flex-col justify-between">
+                        <div class="arrows xl:h-[71px] w-[71px] flex xl:flex-col flex-row justify-between xl:mt-0 mt-32 ">
                             <img src="./assets/img/Vector 2.png" alt="">
                             <img src="./assets/img/Vector 3.png" alt="">
                         </div>
@@ -382,9 +398,9 @@
 
         <!-- Company Logos
          ================================= -->
-        <div class="companyLogos container lg:w-[80%] m-auto mt-32">
+        <div class="companyLogos container xl:w-[80%] m-auto mt-32">
             <div class="innerContainer">
-                <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1" >
+                <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                     <div class="company h-[200px] grayscale flex justify-center items-center">
                         <img src="./assets/img/axon.png" alt="companyLogo">
                     </div>
@@ -392,7 +408,8 @@
                         <img src="./assets/img/jetstar.png" alt="companyLogo">
                     </div>
                     <div class="company h-[200px] flex justify-center items-center ">
-                        <img src="./assets/img/expedia.png " alt="companyLogo" class="bg-white drop-shadow-md rounded-md px-8 py-4 h-115 overflow-hidden">
+                        <img src="./assets/img/expedia.png " alt="companyLogo"
+                            class="bg-white drop-shadow-md rounded-md px-8 py-4 h-115 overflow-hidden">
                     </div>
                     <div class="company h-[200px] grayscale flex justify-center items-center">
                         <img src="./assets/img/qantas.png" alt="companyLogo">
@@ -406,51 +423,57 @@
 
         <!-- News Letters
          ================================= -->
-         <div class="subscriptionTaker container mt-32 lg:w-[90%] m-auto relative">
-            <div class="innerContainer bg-[#DFD7F9] w-[90%] m-auto relative rounded-xl rounded-tl-[120px] min-h-[410px] flex flex-col justify-center items-center">
+        <div class="subscriptionTaker container mt-32 lg:w-[90%] m-auto relative">
+            <div
+                class="innerContainer bg-[#DFD7F9] w-[90%] m-auto relative rounded-xl rounded-tl-[120px] min-h-[410px] flex flex-col justify-center items-center">
                 <div class="spiralOne absolute bottom-0 -left-20">
                     <img src="./assets/img/Mask Group.png" alt="">
                 </div>
-                <div class="centerItems text-center z-10">
-                    <div class="subscribeHeading max-w-[880px]">
-                        <h3 class="text-4xl font-semibold text-[#5E6282]">Subscribe to get information, latest news and other
+                <div class="centerItems text-center z-10 ">
+                    <div class="subscribeHeading xl:max-w-[880px] w-[70%] m-auto">
+                        <h3 class="lg:text-4xl md:text-2xl text-xl font-semibold text-[#5E6282]">Subscribe to get
+                            information, latest news and other
                             interesting offers about Jadoo</h3>
                     </div>
-                    <div class="subscribeForm flex justify-center mt-[74px] w-full">
+                    <div class="subscribeForm flex justify-center mt-[74px] w-full sm:flex-row flex-col">
                         <div class="formInput ">
-                            <input type="email" name="email" id="email" class="p-4 rounded-xl mr-4" placeholder="Your email">
+                            <input type="email" name="email" id="email" class="p-4 rounded-xl sm:mr-4"
+                                placeholder="Your email">
                         </div>
                         <div class="formSubmit">
-                            <button type="submit" class="rounded-xl text-white px-8 py-4 bg-[#FF7D68]">Subscribe</button>
+                            <button type="submit"
+                                class="rounded-xl text-white px-8 py-4 bg-[#FF7D68] sm:mt-0 mt-4">Subscribe</button>
                         </div>
                     </div>
                 </div>
-                
-                <div class="shareLogo absolute -top-8 -right-8">
+
+                <div class="shareLogo absolute sm:-top-8 sm:-right-8 -top-9 -right-3">
                     <img src="./assets/img/arrow.png" alt="">
                 </div>
                 <div class="spiralTwo absolute top-0 right-0 opacity-10">
                     <img src="./assets/img/circles.png" alt="">
                 </div>
             </div>
-            <div class="decoreOuter absolute -right-9 -bottom-16">
+            <div class="decoreOuter absolute -right-9 -bottom-16 lg:block hidden">
                 <img src="./assets/img/Group 5.png" alt="">
             </div>
-         </div>
+        </div>
 
         <!-- Footer
          ================================= -->
-        <div class="footerContainer container mt-32 lg:w-[80%] m-auto">
-            <footer >
-                <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2 sm:max-w-[100%] max-w-max m-auto sm:text-left text-center" >
+        <div class="footerContainer relative container mt-32 lg:w-[80%] m-auto mb-[84px]">
+            <footer class="relative">
+                <div
+                    class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2 sm:max-w-[100%] max-w-max m-auto sm:text-left text-center">
                     <div class="company ">
                         <div class="brandName">
-                            <h2 class="text-[44px] font-semibold">Jadoo.</h2>
+                            <h2 class="text-[44px] font-semibold lg:w-full max-w-max m-auto ">Jadoo.</h2>
                         </div>
                         <div class="tagline">
-                            <p class="text-sm text-[#080809]">Book your trip in minute, get full
+                            <p class="text-sm text-[#080809] lg:w-full max-w-[130px] m-auto">Book your trip in minute,
+                                get full
                                 Control for much longer.
-                                </p>
+                            </p>
                         </div>
                     </div>
                     <div class="companyLinks max-w-[150px] m-auto sm:mt-0 mt-14 ">
@@ -489,7 +512,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="logoLinks lg:mt-0 mt-14 max-w-[200px]  m-auto">
+                    <div class="logoLinks lg:mt-0 mt-14 max-w-[200px]  m-auto text-center">
                         <div class="socialLogos flex">
                             <img src="./assets/img/Social.png" alt="">
                             <img src="./assets/img/Social (1).png" alt="">
@@ -508,12 +531,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center text-sm text-[#5E6282] font-medium mt-[84px] mb-[84px]">
+                <div class="text-center text-sm text-[#5E6282] font-medium mt-[84px]">
                     <p>All rights reserved@jadoo.co</p>
+                </div>
+                <div class="footerDecore absolute xl:-bottom-24 xl:-right-44 xl:block hidden">
+                    <img src="./assets/img/Ellipse 8.png" alt="">
                 </div>
             </footer>
         </div>
     </div>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLeft = document.querySelector('.navLinks');
+        const links  = document.querySelectorAll("li");
+        links.forEach(link=>{
+            link.addEventListener('click', () => {
+            navLeft.classList.toggle('hidden');
+            navToggle.classList.toggle('navToggleActive');
+        });
+        })
+        navToggle.addEventListener('click', () => {
+            navLeft.classList.toggle('hidden');
+            navToggle.classList.toggle('navToggleActive');
+        });
+    </script>
 </body>
 
 </html>
