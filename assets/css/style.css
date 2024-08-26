@@ -5,7 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.fullPage{
+    overflow: hidden;
+}
 .heading{
     font-family: "Volkhov", serif;
     font-weight: 700;
@@ -16,9 +18,28 @@
   font-weight: 400;
   font-style: normal;
 }
-/* .dot{
-    display: inline-block;
-    min-height: 20px;
-    height: 20px;
-    background-color: #39425D;
-} */
+
+/* bg-[#14183E] text-white z-auto absolute right-0 h-[100vh] w-[50vw] */
+@media screen and (max-width: 767px) {
+   .navLinks{
+        background-color: #14183E;
+        color: white;
+        min-height: 100vh;
+        width: 50vw;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 30px;
+        line-height: 70px;
+   }
+   .navLinks .normalLinks{
+    border-bottom: 1px solid #cfcfcf;
+   }
+   #signUpBtn{
+    border: 1px solid #fff;
+    line-height: 90px;
+   }
+   #lang{
+    color: #fff;
+   }
+}
